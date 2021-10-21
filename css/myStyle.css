@@ -1,0 +1,14 @@
+h1 {
+    font-size: 60px;
+    color: blueviolet;
+    float:left;
+    font-style: oblique;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+p {
+    color: cornflowerblue;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+body{
+    color: navy;
+}
