@@ -157,3 +157,5 @@ function doSomethingNOT(){
   function output(content){
     document.getElementById("display1").innerHTML = content;
   } 
+
+  
