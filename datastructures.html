@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Data Structures</title>
+    <script>
+    // welcome to objects
+    // create an object that is a pet, car, or favorite athlete
+        let player = {
+            Name: "",
+            Age: 28,
+            Team: "SF",
+            Gender: "Male",
+            Weight: 230,
+        }
+
+        //constuctor
+        function dog(name, age){
+            this.name = name;
+            this.age = age;
+        }
+
+        class Dog {
+            constructor(name, age, x, y, width, height){
+                this.name = name;
+                this.age = age;
+                this.x = x;
+                this.y = y;
+                this.width = width;
+                this.height = height;
+            }
+            bark(){
+                console.log("WOOOOF!!!");
+            }
+            run(){
+
+            }
+            update(){
+
+            }
+            draw(){
+
+            }
+        }
+
+        let myDog = new dog("Doofus", 2);
+        let yourDog = new Dog("Roofus", 4);
+        yourDog.bark();
+        console.log(myDog.name);
+        console.log(myDog.age);
+        console.log(yourDog.name);
+        console.log(yourDog.age);
+
+        function input() {
+            // Selecting the input element and get its value 
+            return document.getElementById("inputId").value;
+        }
+
+        function process(){
+            // set a variable to whatever is in the HTML field using the input function
+            // which gets the value from 'inputId'
+            player.name = input();
+            output("the players's name is now: " + player.name);
+        }
+
+        function output(content) {
+            document.getElementById("display1").innerHTML = content;
+        }
+
+    </script>
+</head>
+<body>
+    <!-- this line of code holds a value input by the user; creates form field -->
+    <input type="text" placeholder="Type " id="inputId">
+    <button type="button" onclick="process();">Input</button>
+    <p>Output:</p>
+    <p id="display1">Output will replace this...</p>
+</body>
+</html>
